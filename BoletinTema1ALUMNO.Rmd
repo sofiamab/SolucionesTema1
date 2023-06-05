@@ -110,3 +110,21 @@ cat("Animals that do not appear in both datasets:", animals_diff, "\n")
 
 ```
 
+#Exercice 2
+```{r}
+library(car)
+
+# Get the log of brain weights from the "mammals" dataset
+brain_weights_mammals <- log(mammals$brain)
+
+# Get the log of brain weights from the "Animals2" dataset
+brain_weights_Animals2 <- log(Animals2$brain)
+
+# Create a QQ plot for the log brain weights of "mammals"
+qqPlot(brain_weights_mammals, main = "QQ Plot - Mammals")
+
+# Create a QQ plot for the log brain weights of "Animals2"
+qqPlot(brain_weights_Animals2, main = "QQ Plot - Animals2")
+```
+--------> As we can see in the graphic, the samples are within the dashed lines, so
+we can indicate that they follow a Gaussian distribution with 95 % confidence.
