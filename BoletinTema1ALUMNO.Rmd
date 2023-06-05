@@ -128,3 +128,22 @@ qqPlot(brain_weights_Animals2, main = "QQ Plot - Animals2")
 ```
 --------> As we can see in the graphic, the samples are within the dashed lines, so
 we can indicate that they follow a Gaussian distribution with 95 % confidence.
+
+#Exercice 3
+The first three stages for the "cabbages" dataset in the MASS package would be:
+Data Exploration:
+    .Use functions like head() and summary() to get an initial overview of the dataset.
+    .Examine the structure and dimensions of the dataset using str().
+    .Identify the variables and their types (numeric, categorical, etc.).
+    .Check for missing.
+    
+Data Visualization:
+     .Create graphs, such as histograms, box plots, scatter plots... to explore the distribution and relationships of variables.
+     .Look for patterns or outliers.
+     
+Data Preprocessing:
+      .Handle missing data by imputation or deletion.
+      .Deal with outliers
+      .Perform any necessary data transformations, such as scaling or creating new variables based on existing ones.
+
+
