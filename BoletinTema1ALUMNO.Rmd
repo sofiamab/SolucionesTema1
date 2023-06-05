@@ -131,7 +131,9 @@ we can indicate that they follow a Gaussian distribution with 95 % confidence.
 #Exercice 3
 ```{r}
 libReturn  <- library()
-print(libReturn )
+str(libReturn )
+
+head(libReturn$results, n = 5)
 ```
 
 #Exercice 4
