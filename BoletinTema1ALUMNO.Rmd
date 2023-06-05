@@ -70,5 +70,17 @@ dim(Animals2)
 tail(Animals2)
 str(Animals2)
 
+# Display the row names of the mammals dataset
+rownames(mammals)
+
+# Display the column names of the mammals dataset
+colnames(mammals)
+
+# Display the row names of the Animals2 dataset
+rownames(Animals2)
+
+# Display the column names of the Animals2 dataset
+colnames(Animals2)
+
 ```
 
