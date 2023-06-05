@@ -129,7 +129,7 @@ qqPlot(brain_weights_Animals2, main = "QQ Plot - Animals2")
 --------> As we can see in the graphic, the samples are within the dashed lines, so
 we can indicate that they follow a Gaussian distribution with 95 % confidence.
 
-#Exercice 3
+#Exercice 4
 The first three stages for the "cabbages" dataset in the MASS package would be:
 Data Exploration:
     .Use functions like head() and summary() to get an initial overview of the dataset.
@@ -146,12 +146,21 @@ Data Preprocessing:
       .Deal with outliers
       .Perform any necessary data transformations, such as scaling or creating new variables based on existing ones.
 ```{r}
+library(carData)
 data(cabbages)
+data(Chile)
 
 # Count the number of missing values for each variable
-missing_values <- sapply(cabbages, function(x) sum(is.na(x)))
+missing_values_cab <- sapply(cabbages, function(x) sum(is.na(x)))
 # Print the number of missing values for each variable
-print(missing_values)
+print(missing_values_cab)
+
+# Data Exploration for "Chile"
+#head(Chile)
+#summary(Chile)
+#str(Chile)
+missing_values_chile <- sapply(Chile, function(x) sum(is.na(x)))
+print(missing_values_chile)
 
 ```
 
