@@ -162,6 +162,11 @@ print(missing_values_cab)
 missing_values_chile <- sapply(Chile, function(x) sum(is.na(x)))
 print(missing_values_chile)
 
-```
+# Use the summary() function on the "cabbages" dataset
+summary(cabbages)
+# Use the summary() function on the "Chile" dataset
+summary(Chile)
 
+```
+-----> As we can see, the summary function gives also the number of NA values (NA's) when they exist
 
