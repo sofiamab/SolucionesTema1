@@ -233,8 +233,12 @@ for (cult in cult_levels) {
   model <- lm(VitC ~ HeadWt, data = subset_data)
   models[[cult]] <- model
   abline(model, col = "blue")
+  print(summary(model)$coefficients) #use of summari to display the coefficients table for each model.
 }
+
+
 
 ```
 
 -------> As we can see in the plot, there are some deviations of the points compared to the regression line, so we can't really say that there is a linear relationship between the two variables
+-------> The 
