@@ -59,5 +59,16 @@ library(MASS)
 ?Animals2
 ?mammals
 
+#data inspection
+dim(mammals)
+dim(mammals)
+tail(mammals)
+str(mammals)
+
+dim(Animals2)
+dim(Animals2)
+tail(Animals2)
+str(Animals2)
+
 ```
 
