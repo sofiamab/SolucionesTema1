@@ -195,3 +195,14 @@ qqPlot(cabbages$VitC, main = "QQ Plot - VitC")
 
 -----------> As we can see in the graphics, the samples are within the dashed lines, so
 we can indicate that "HeadWt" and "VitC" follow a Gaussian distribution with 95 % confidence.
+
+#Exercice 6:
+```{r}
+library(ggplot2)
+
+# Create a histogram of VitC grouped by Cult
+ggplot(cabbages, aes(x = VitC, fill = Cult)) +
+  geom_histogram(binwidth = 10, position = "dodge") +
+  labs(title = "Histogram of VitC by Cult", x = "Vitamin C (mg)", fill = "Cult")
+```
+------> As we can see, the histogram graph suggests variations in the vitamin C content among the cabbage varieties
