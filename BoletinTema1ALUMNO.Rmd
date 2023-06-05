@@ -128,6 +128,7 @@ qqPlot(brain_weights_Animals2, main = "QQ Plot - Animals2")
 ```
 --------> As we can see in the graphic, the samples are within the dashed lines, so
 we can indicate that they follow a Gaussian distribution with 95 % confidence.
+
 #Exercice 3
 ```{r}
 libReturn  <- library()
@@ -185,3 +186,12 @@ summary(Chile)
 ```
 -----> As we can see, the summary function gives also the number of NA values (NA's) when they exist
 
+#Exercice 5:
+```{r}
+# Generate QQ plots for the variables "HeadWt" and "VitC"
+qqPlot(cabbages$HeadWt, main = "QQ Plot - HeadWt")
+qqPlot(cabbages$VitC, main = "QQ Plot - VitC")
+```
+
+-----------> As we can see in the graphics, the samples are within the dashed lines, so
+we can indicate that "HeadWt" and "VitC" follow a Gaussian distribution with 95 % confidence.
