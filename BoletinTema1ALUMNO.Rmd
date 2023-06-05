@@ -1,24 +1,35 @@
 ---
-title: "Put a title here"
-author: "Put your name here "
-date: "`r Sys.Date()`"
+title: "Pon un título a tu documento"
+subtitle: Tratamiento de Datos. Grado en Ciencia de Datos- UV
+author: "Pon aquí tu nombre y apellidos"
+#Pone la fecha de generación del documento
+date:  "`r Sys.Date()`"  #Pondría la fecha del día actual
+# Para que en lugar de "Contents" ponga "Indice" al incluir la tabla de contenido
+
+params:
+  lang: ES
+lang: "`r switch(params$lang, ES = 'es-ES', EN = 'en-US')`"
+
+# Por defecto se generará un salida html
+# Si si quieres otras salidas o varias de ellas descomenta lo que proceda
 output:
+# Salida pdf. Si se incluye código en LaTex necesitarás tener instalado un compilador de Latex
   pdf_document:
-    toc: yes
-    toc_depth: 3
+    toc: yes      # Tabla de contenido (índice)
+    toc_depth: 3  # Número de niveles de la tabla de contenido (índice) # 1, ##2,###3
+#    number_sections: yes # Numeración de las secciones
+# Salida html, 
   html_document:
     echo: yes
     number_sections: yes
-    theme: cerulean
+    theme: lumen    # Aspecto y estilo,otras opciones: cerulean, journal, flatly, darkly, readable, spacelab, united, cosmo, lumen, paper, sandstone, simplex, and yeti 
     toc: yes
+# Salida html_notebook, como html, pero con algunas opciones de visualización
   html_notebook:
     echo: yes
     number_sections: yes
     toc: yes
-params:
-  lang: ES
-lang: "`r switch(params$lang, ES = 'es-ES', EN = 'en-US')`"
-subtitle: "Tratamiento de Datos. Grado en Ciencia de Datos- UV"
+# Esto nos permite traducir estas etiquetas para que aparezcan en otro idioma en caso de que se usen en el documento para referenciar a figuras, tablas, etc
 language:
   label:
     fig: 'Figura '
@@ -224,5 +235,3 @@ Compila el proyecto como **pdf** y como **html** y observa el fichero obtenido. 
 
 
 ```
-
-# 
