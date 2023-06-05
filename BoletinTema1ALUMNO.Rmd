@@ -72,13 +72,13 @@ str(Animals2)
 
 # Display the row names of the mammals dataset
 rownames(mammals)
-
 # Display the column names of the mammals dataset
 colnames(mammals)
 # Display the row names of the Animals2 dataset
 rownames(Animals2)
 # Display the column names of the Animals2 dataset
 colnames(Animals2)
+
 # Get the animal names from the "mammals" dataset
 animals_mammals <- rownames(mammals)
 # Get the animal names from the "Animals2" dataset
@@ -89,6 +89,19 @@ animals_Animals2 <- rownames(Animals2)
 commonAnimals <- intersect(animals_mammals, animals_Animals2)
 # Print the common animals
 commonAnimals
+
+
+
+
+# Find the animals that are not in both datasets using the setdiff() function
+notCommonAnimals <- setdiff(union(animals_mammals, animals_Animals2), intersect(animals_mammals, animals_Animals2))
+
+# Count the number of animals that are not in both datasets
+numNotCommonAnimals <- length(notCommonAnimals)
+
+# Print the number of animals and their types
+cat("Number of animals not in both datasets:", numNotCommonAnimals, "\n")
+cat("Types of animals not in both datasets:", notCommonAnimals, "\n")
 
 ```
 
