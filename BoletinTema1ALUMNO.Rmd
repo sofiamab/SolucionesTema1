@@ -75,12 +75,20 @@ rownames(mammals)
 
 # Display the column names of the mammals dataset
 colnames(mammals)
-
 # Display the row names of the Animals2 dataset
 rownames(Animals2)
-
 # Display the column names of the Animals2 dataset
 colnames(Animals2)
+# Get the animal names from the "mammals" dataset
+animals_mammals <- rownames(mammals)
+# Get the animal names from the "Animals2" dataset
+animals_Animals2 <- rownames(Animals2)
+
+
+# Find the common animals using the intersect() function
+commonAnimals <- intersect(animals_mammals, animals_Animals2)
+# Print the common animals
+commonAnimals
 
 ```
 
