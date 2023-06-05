@@ -145,5 +145,14 @@ Data Preprocessing:
       .Handle missing data by imputation or deletion.
       .Deal with outliers
       .Perform any necessary data transformations, such as scaling or creating new variables based on existing ones.
+```{r}
+data(cabbages)
+
+# Count the number of missing values for each variable
+missing_values <- sapply(cabbages, function(x) sum(is.na(x)))
+# Print the number of missing values for each variable
+print(missing_values)
+
+```
 
 
