@@ -133,7 +133,15 @@ we can indicate that they follow a Gaussian distribution with 95 % confidence.
 libReturn  <- library()
 str(libReturn )
 
+#first 5 elements
 head(libReturn$results, n = 5)
+
+# Get the list of installed packages
+installed_packages <- installed.packages()
+# Count the number of installed packages
+num_installed_packages <- length(installed_packages)
+# Print the number of installed packages
+print(num_installed_packages)
 ```
 
 #Exercice 4
